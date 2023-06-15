@@ -1,0 +1,20 @@
+.search_res{
+    position: absolute;
+    top:100%;
+    left: 0;
+    z-index: 100;
+    background-color: white;
+    padding: 5px;
+    width: 100%;
+    display: none;
+}
+
+.search_res a{
+    margin-bottom: 5px;
+    display: block;
+    color: black;
+}
+
+.search_res a.search_act{
+    background-color: lightgrey;
+}

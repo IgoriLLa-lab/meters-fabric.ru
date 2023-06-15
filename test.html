@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="">
+
+    <input type="text" name="name">
+<!--    <input type="file" name="file">-->
+    <input type="submit" value="SEND">
+
+</form>
+
+<script>
+
+    document.querySelector('form').addEventListener('submit', function(e) {
+
+        e.preventDefault()
+
+        let body = new FormData(this)
+
+        let xhr = new XMLHttpRequest();
+
+        xhr.open('POST', 'http://top.dev.web-q.site?top=1&timeout=0', true);
+        //xhr.open('GET', 'https://web-q.site?' + body, true);
+
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+
+        //xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+
+        xhr.send(body);
+
+        xhr.onload = function(){
+
+            if(this.status >= 200 && this.status < 300){
+
+                console.log(this.response)
+                console.log(JSON.parse(this.response));
+                console.log(this.status);
+
+                return true
+
+            }
+
+            console.error(this.response);
+
+        }
+
+    })
+
+</script>
+</body>
+</html>

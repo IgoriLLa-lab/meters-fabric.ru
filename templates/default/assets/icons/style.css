@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'martinisi';
+  src:  url('fonts/martinisi.eot?5igq9f');
+  src:  url('fonts/martinisi.eot?5igq9f#iefix') format('embedded-opentype'),
+    url('fonts/martinisi.ttf?5igq9f') format('truetype'),
+    url('fonts/martinisi.woff?5igq9f') format('woff'),
+    url('fonts/martinisi.svg?5igq9f#martinisi') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'martinisi' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-bottom:before {
+  content: "\e900";
+}
+.icon-arrow-left:before {
+  content: "\e901";
+}
+.icon-arrow-right:before {
+  content: "\e902";
+}
+.icon-arrow-top:before {
+  content: "\e903";
+}
+.icon-bag:before {
+  content: "\e904";
+}
+.icon-bell:before {
+  content: "\e905";
+}
+.icon-cancel:before {
+  content: "\e906";
+}
+.icon-clock:before {
+  content: "\e907";
+}
+.icon-email:before {
+  content: "\e908";
+}
+.icon-facebook:before {
+  content: "\e909";
+}
+.icon-google:before {
+  content: "\e90a";
+}
+.icon-instagram:before {
+  content: "\e90b";
+}
+.icon-map:before {
+  content: "\e90c";
+}
+.icon-microphone:before {
+  content: "\e90d";
+}
+.icon-phone:before {
+  content: "\e90e";
+}
+.icon-play:before {
+  content: "\e90f";
+}
+.icon-search:before {
+  content: "\e910";
+}
+.icon-size:before {
+  content: "\e911";
+}
+.icon-star:before {
+  content: "\e912";
+}
+.icon-user:before {
+  content: "\e913";
+}
+.icon-video:before {
+  content: "\e914";
+}
+.icon-vk:before {
+  content: "\e915";
+}
+.icon-whatsapp:before {
+  content: "\e916";
+}
+.icon-zoom:before {
+  content: "\e917";
+}

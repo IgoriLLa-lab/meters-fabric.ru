@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<form action="" >
+    <input type="text" name="name">
+    <input type="text" name="email">
+    <input type="text" name="message">
+    <input type="file" name="file">
+    <input type="submit" value="SEND">
+</form>
+
+
+<script>
+
+    let form = document.querySelector('form')
+
+    if(form){
+
+        form.addEventListener('submit', function(e){
+
+            e.preventDefault()
+
+            let url = 'http://top.dev.web-q.site'
+            //let url = 'http://martinisi-new-dev.my/url.php'
+
+            let requestMethod = 'GET'
+
+            let formData = new FormData(this)
+
+            formData.append('top', 1)
+
+            let parameters = 'hello=world&top=1'
+
+            let postParameters = 'postP1=1&postP2=2&top=1'
+
+            let request = `${url}?${parameters}`
+            //let request = `${url}`
+
+            let xhr = new XMLHttpRequest()
+
+            xhr.open(requestMethod, request, true)
+
+            if(requestMethod === 'POST'){
+
+                //xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=utf-8')
+
+            }
+
+            //xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest')
+
+            xhr.send(formData)
+
+            xhr.onload = function(){
+
+                if(this.status >= 200 && this.status < 300){
+
+                    console.log(this.response)
+                    console.log(JSON.parse(this.response))
+
+                    return true
+
+                }
+
+                console.error(this.response)
+
+            }
+
+
+        })
+
+    }
+
+</script>
+</body>
+</html>

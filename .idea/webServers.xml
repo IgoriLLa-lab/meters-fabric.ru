@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="6a640bde-41d5-4692-a24a-1c93cedfaa7c" name="beget-metry-shop" url="http://meters-fabric.ru">
+        <fileTransfer rootFolder="/meters-fabric.ru" host="meters-fabric.ru" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
